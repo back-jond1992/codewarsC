@@ -11,3 +11,18 @@ const char * even_or_odd(int number) {
 int multiply(int a, int b) {
   return a * b;
 }
+
+//Sum of Positive
+
+int positive_sum(const int *values, size_t count) {
+  
+  int result = 0;
+     
+  for(int i = 0; i < count; i++) {
+    if(values[i] > 0) {
+       result += values[i];
+    }
+  }
+  
+   return result;
+}
