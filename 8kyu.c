@@ -26,3 +26,10 @@ int positive_sum(const int *values, size_t count) {
   
    return result;
 }
+
+// Return negative
+
+int makeNegative(int num)
+{
+  return num <= 0 ? num : 0 - num;
+}
