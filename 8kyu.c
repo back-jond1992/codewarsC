@@ -39,3 +39,30 @@ int makeNegative(int num)
 float opposite(float num) {
   return -num;
 }
+
+// Remove First and Last
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+char* remove_char(char* dst, const char* src)
+{
+  
+    int length = strlen(src);
+
+    char result[length];
+      
+    int counter = 0;  
+      
+    for(int i = 1; i < length - 1; i++) {
+      result[counter] = src[i];
+      counter++;
+    }
+  
+    strcpy(dst, result);
+  
+    dst[length -2 ] = '\0';
+  
+    return dst;
+}
