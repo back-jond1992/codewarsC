@@ -66,3 +66,28 @@ char* remove_char(char* dst, const char* src)
   
     return dst;
 }
+
+// Reversed String 
+
+#include <string.h>
+#include <stdio.h>
+
+char *strrev (char *string)
+{
+  int length = strlen(string);
+  
+  char reversed[length];
+  
+  int counter = 0;
+  
+  for (int i = length - 1; i >= 0; i--) {
+    reversed[counter] = string[i];
+    counter ++;
+  }
+  
+  strcpy(string, reversed);
+  
+  string[length] = '\0';
+  
+  return string;
+}
