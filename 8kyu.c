@@ -91,3 +91,13 @@ char *strrev (char *string)
   
   return string;
 }
+
+// Convert boolean values to strings 'Yes' or 'No'
+
+#include <stdio.h>
+
+const char *bool_to_word (int value) {
+  
+  return value == 0 ? "No" : "Yes";
+  
+}
